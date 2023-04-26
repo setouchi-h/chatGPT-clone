@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="side-bar">
+        <button>+ New chat</button>
+        <ul className="history">
+          <li>aaaaa</li>
+        </ul>
+        <nav>
+          <p>Powered by GPT</p>
+        </nav>
+      </section>
+      <section className="main">
+        <h1>demoGPT</h1>
+        <ul className="feed"></ul>
+        <div className="bottom-section">
+          <div className="input-container">
+            <input />
+            <div id="submit">➳</div>
+          </div>
+          <p className="info">
+            ChatGPT Mar 23 Version. Free Research Preview. ChatGPT may produce
+            inaccurate information about people, places, or facts.
+          </p>
+        </div>
+      </section>
     </div>
   );
-}
+};
 
 export default App;
